@@ -32,7 +32,7 @@ const SchedulePage = () => {
           <select
           name="hora" 
           id="hora">
-            <option placeholder disabled>Informe o horário</option>
+            <option placeholder>Informe o horário</option>
             <option value="6h">6h</option>
             <option value="7h">7h</option>
             <option value="8h">8h</option>
@@ -48,7 +48,7 @@ const SchedulePage = () => {
           <select
           name="service" 
           id="service">
-            <option placeholder disabled>Informe o serviço</option>
+            <option placeholder>Informe o serviço</option>
             <option value="cabelo">Cabelo</option>
             <option value="Barba">Barba</option>
             <option value="Cabelo+Barba">Cabelo + Barba</option>
@@ -60,7 +60,7 @@ const SchedulePage = () => {
           <select
           name="barber" 
           id="barber">
-            <option placeholder disabled>Informe o barbeiro</option>
+            <option placeholder>Informe o barbeiro</option>
             <option value="Allan Dayan">John Doe</option>
           </select>
         </label>

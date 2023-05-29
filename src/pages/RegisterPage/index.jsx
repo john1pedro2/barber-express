@@ -8,7 +8,7 @@ const RegisterPage = () => {
 return(
   <>
   <div className="registerContainer">
-    <h1 className="registerTitle">SmartBarber - Espaço VIP</h1>
+    <h1 className="registerHeader">SmartBarber - Espaço VIP</h1>
     <div className="registerBackgroundContainer">
         <div className="registerFormContainer">
           <div className="registerTitle">

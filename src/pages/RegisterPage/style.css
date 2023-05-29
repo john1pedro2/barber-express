@@ -6,11 +6,12 @@ div.registerContainer {
   align-items: center;
 }
 
-.registerTitle {
+.registerHeader {
   margin-top: 50px;
   font-size: 64px;
   font-weight: 600;
   color: #F8F9FA;
+  white-space: nowrap;
 }
 
 .registerBackgroundContainer {
@@ -51,8 +52,10 @@ label.registerInputWrapper {
 }
 
 label.registerInputWrapper > i {
-  width: 32px;
-  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 51px;
   padding-left: 8px;
 }
 
@@ -73,6 +76,8 @@ label.registerInputWrapper > input, select {
   color: rgba(38, 38, 38, 0.6);
 } label.registerInputWrapper > input:focus, label.registerInputWrapper > select:focus {
   outline: none;
+}input:-internal-autofill-selected {
+  background-color: #EFF0F6;
 }
 
 .registerActionsContainer {
@@ -109,4 +114,57 @@ div.registerActionsContainer > a {
   text-decoration: none;
 } div.registerActionsContainer > a:visited {
   color: #14142B;
+}
+
+@media (max-width: 868px) {
+  .registerHeader {
+    text-align: center;
+    margin: auto;
+    font-size: 48px;
+    margin: 80px 15px 0 15px;
+
+  } 
+
+  @media (max-width: 674px) {
+    .registerHeader {
+      font-size: 32px;
+    }
+
+    .registerFormContainer {
+      width: auto;
+      margin: 0 20px 0 20px;
+    }
+  }
+
+  @media (max-width: 427px) {
+    .registerHeader {
+      font-size: 28px;
+    }
+  
+    .registerFormContainer {
+      width: 300px;
+    }
+  
+    .registerInputContainer {
+      width: auto;
+      margin: 0;
+      padding: 0 5px 0 5px;
+    }
+  }
+
+  @media (max-width: 380px){
+    .registerContainer{
+      width: 320px;
+      margin: 0;
+    }
+  
+    .registerHeader {
+      font-size: 22px;
+    }
+  
+    .registerBackgroundContainer {
+      width: 100%;
+    }
+  }
+
 }

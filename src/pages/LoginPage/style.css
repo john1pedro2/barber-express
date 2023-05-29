@@ -1,17 +1,18 @@
 .loginContainer {
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: center;
   align-items: center;
 }
 
-.Header {
+.loginHeader {
   margin-top: 50px;
   font-size: 64px;
   font-weight: 600;
   color: #F8F9FA;
+  white-space: nowrap;
 }
 
 .loginBackgroundContainer {
@@ -52,8 +53,10 @@ label.loginInputWrapper {
 }
 
 label.loginInputWrapper > i {
-  width: 32px;
-  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 51px;
   padding-left: 8px;
 }
 
@@ -66,10 +69,12 @@ div.loginInputContainer > label.loginInputWrapper > input {
   font-family: poppins;
   font-weight: 500;
   padding: 0 20px 0 20px;
-} input::placeholder, select::placeholder {
+} input::placeholder {
   color: rgba(38, 38, 38, 0.6);
 } input:focus, select:focus {
   outline: none;
+} label.loginInputWrapper >  input:-internal-autofill-selected {
+  background-color: #EFF0F6;
 }
 
 div.loginActionsContainer {
@@ -108,4 +113,59 @@ div.loginActionsContainer > a {
   text-decoration: none;
 } div.loginActionsContainer > a:visited {
   color: #14142B;
+}
+
+@media (max-width: 868px) {
+  .loginHeader {
+    text-align: center;
+    margin: auto;
+    font-size: 48px;
+    margin: 80px 15px 0 15px;
+
+  }
+}
+
+@media (max-width: 674px) {
+  .loginHeader {
+    font-size: 32px;
+  }
+  
+  .loginFormContainer {
+    width: auto;
+    margin: 0 20px 0 20px;
+  }
+
+}
+
+@media (max-width: 427px) {
+  .loginHeader {
+    font-size: 28px;
+  }
+
+  .loginFormContainer {
+    width: 300px;
+  }
+
+  .loginInputContainer {
+    width: auto;
+    margin: 0;
+    padding: 0 5px 0 5px;
+  }
+
+}
+
+@media (max-width: 380px){
+  .loginContainer{
+    width: 320px;
+    margin: 0;
+  }
+
+  .loginHeader {
+    font-size: 22px;
+  }
+
+  .loginBackgroundContainer {
+    width: 100%;
+  }
+  
 }

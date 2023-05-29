@@ -7,7 +7,7 @@ const LoginPage = () => {
 return(
   <>
   <div className="loginContainer">
-    <h1 className="Header">SmartBarber - Espaço VIP</h1>
+    <h1 className="loginHeader">SmartBarber - Espaço VIP</h1>
     <div className="loginBackgroundContainer">
         <div className="loginFormContainer">
             <div className="loginTitle">
