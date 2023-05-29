@@ -1,0 +1,92 @@
+.scheduleContainer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 80px 0 0 0;
+}
+
+.scheduleFormContainer {
+  width: 500px;
+  height: 585px;
+  background-color: #ffffff;
+  border-radius: 32px;
+}
+
+div.scheduleTitle > p {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 57px 0 40px 40px;
+}
+
+.scheduleInputContainer {
+  height: 100%;
+  margin: 0 90px 0 90px;
+}
+
+label.scheduleInputWrapper {
+  width: 100%;
+  height: 51px;
+  border-radius: 17px;
+  border: none;
+  background-color: #EFF0F6;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 25px 0 0 0;
+}
+
+label.scheduleInputWrapper > i {
+  width: 32px;
+  height: 32px;
+  padding-left: 8px;
+}
+
+select#hora, select#service, select#barber {
+  width: 85%; 
+}
+
+input, select {
+  width: 100%;
+  height: 51px;
+  border-radius: 17px;
+  border: none;
+  background-color: #EFF0F6;
+  font-family: poppins;
+  font-weight: 500;
+  padding: 0 20px 0 20px;
+} input::placeholder, select::placeholder {
+  color: rgba(38, 38, 38, 0.6);
+} input:focus, select:focus {
+  outline: none;
+}
+
+.scheduleActionsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+div.scheduleActionsContainer > a > button {
+  width: 215px;
+  height: 44px;
+  background-color: #084298;
+  border-radius: 16px;
+  border: none;
+  color: #EFF0F6;
+  font-size: 16px;
+  font-weight: 600;
+}div.scheduleActionsContainer > a > button#last {
+  background-color: #ca0a0a;
+} div.scheduleActionsContainer > a > button:hover {
+  cursor: pointer;
+  background-color: rgba(8, 66, 152, 0.8);
+  transition: background-color 500ms;
+} div.scheduleActionsContainer > a > button#last:hover {
+  background-color: rgba(202, 10, 10, 0.8);
+} 
+
+div.scheduleActionsContainer > button:focus {
+  outline: none;
+}

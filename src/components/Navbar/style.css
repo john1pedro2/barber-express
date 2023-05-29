@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div.navbarContainer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  background-color: #162030;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 32px 32px;
+}
+
+div.navbarContainer  > img {
+  width: 52px;
+  height: 52px;
+  border-radius: 100%;
+}
+
+.navbarTitle {
+  font-size: 24px;
+  margin: 0 480px 0 20px;
+}
+
+div.navbarContainer  > a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 20px 0 20px;
+} div.navbarContainer  > a:visited {
+  color: #ffffff;
+  text-decoration: none;
+} div.navbarContainer  > a:hover {
+  font-weight: 600;
+  transition: font-weight 500ms;
+} div.navbarContainer  > a:nth-child(5), a:visited:nth-child(5) {
+  color: #ca0a0a;
+}
