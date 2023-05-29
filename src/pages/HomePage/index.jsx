@@ -1,12 +1,12 @@
-import Navbar from '../../components/navbar/Navbar';
+import Navbar from '../../components/Navbar/Navbar'
 
 import './style.css'
 
 const HomePage = () => {
-  return(
+  return (
     <>
       <Navbar />
-      <div className="homePageContainer">
+      <div className='homePageContainer'>
         <h2>Horário de funcionamento</h2>
         <table>
           <tr>
@@ -21,13 +21,21 @@ const HomePage = () => {
           </tr>
         </table>
         <h2>Serviços</h2>
-        <p>Atualmente estamos realizando os seguintes serviços: corte de cabelo, barba, sobrancelha com ou sem hena e manutenção de dread.</p>
+        <p>
+          Atualmente estamos realizando os seguintes serviços: corte de cabelo,
+          barba, sobrancelha com ou sem hena e manutenção de dread.
+        </p>
         <br />
-        <p>Para agendar seu horário basta clicar no botão abaixo e preencher o formulário.</p>
-        <a href="/schedule"><button>Agendar Horário</button></a>
+        <p>
+          Para agendar seu horário basta clicar no botão abaixo e preencher o
+          formulário.
+        </p>
+        <a href='/schedule'>
+          <button>Agendar Horário</button>
+        </a>
       </div>
     </>
-  );
-  }
-  
-  export default HomePage;
+  )
+}
+
+export default HomePage

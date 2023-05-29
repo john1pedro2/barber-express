@@ -13,4 +13,5 @@ html {
 
 body {
   background-color: #172740;
+  user-select: none ;
 }

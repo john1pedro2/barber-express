@@ -32,7 +32,7 @@
 div.loginTitle {
   font-size: 32px;
   font-weight: 600;
-  margin: 57px 0 40px 40px;
+ margin: 57px 0 40px 40px;
 }
 
 .loginInputContainer {
@@ -50,6 +50,7 @@ label.loginInputWrapper {
   align-items: center;
   flex-direction: row;
   margin: 25px 0 0 0;
+  padding: 0.4rem;
 }
 
 label.loginInputWrapper > i {
@@ -87,6 +88,7 @@ div.loginActionsContainer {
 
 div.loginActionsContainer > a > button {
   width: 215px;
+  transition: 0.2s;
   height: 44px;
   background-color: #084298;
   border-radius: 16px;
@@ -96,9 +98,10 @@ div.loginActionsContainer > a > button {
   font-weight: 600;
 } button:hover {
   cursor: pointer;
-  background-color: rgba(8, 66, 152, 0.8);
-  transition: background-color 500ms;
-} 
+  opacity: 0.8;
+} button:active {
+  opacity: 0.6;
+}
 
 div.loginActionsContainer > a > button:focus {
   outline: none;
@@ -106,13 +109,21 @@ div.loginActionsContainer > a > button:focus {
 
 div.loginActionsContainer > a {
   width: 100%;
-  margin: 20px 0 0 0;
+  margin: 10px 0 0 0;
   align-items: center;
   text-align: center;
   color: #14142B;
   text-decoration: none;
-} div.loginActionsContainer > a:visited {
+  transition: 0.2s;
+  cursor: default;
+} div.loginActionsContainer > a:visited  {
   color: #14142B;
+} div.loginActionsContainer > a > span:hover {
+  cursor: pointer;
+  color: #084298;
+} div.loginActionsContainer > a > span:active {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 @media (max-width: 868px) {
@@ -149,9 +160,8 @@ div.loginActionsContainer > a {
   .loginInputContainer {
     width: auto;
     margin: 0;
-    padding: 0 5px 0 5px;
+    padding: 0 3px 0 3px;
   }
-
 }
 
 @media (max-width: 380px){
