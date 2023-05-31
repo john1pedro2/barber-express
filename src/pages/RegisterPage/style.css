@@ -1,0 +1,170 @@
+div.registerContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.registerHeader {
+  margin-top: 50px;
+  font-size: 64px;
+  font-weight: 600;
+  color: #F8F9FA;
+  white-space: nowrap;
+}
+
+.registerBackgroundContainer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 80px 0 0 0;
+}
+
+.registerFormContainer {
+  width: 500px;
+  height: 585px;
+  background-color: #ffffff;
+  border-radius: 32px;
+}
+
+div.registerTitle {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 57px 0 40px 40px;
+  color: #14142B;
+}
+
+.registerInputContainer {
+  margin: 0 90px 0 90px;
+}
+
+label.registerInputWrapper {
+  width: 100%;
+  height: 51px;
+  border-radius: 17px;
+  border: none;
+  background-color: #EFF0F6;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 25px 0 0 0;
+}
+
+label.registerInputWrapper > i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 51px;
+  padding-left: 8px;
+}
+
+label.registerInputWrapper > select#hora, select#service, select#barber {
+  width: 85%; 
+}
+
+label.registerInputWrapper > input, select {
+  width: 100%;
+  height: 51px;
+  border-radius: 17px;
+  border: none;
+  background-color: #EFF0F6;
+  font-family: poppins;
+  font-weight: 500;
+  padding: 0 20px 0 20px;
+} label.registerInputWrapper > input::placeholder, label.registerInputWrapper > select::placeholder {
+  color: rgba(38, 38, 38, 0.6);
+} label.registerInputWrapper > input:focus, label.registerInputWrapper > select:focus {
+  outline: none;
+}input:-internal-autofill-selected {
+  background-color: #EFF0F6;
+}
+
+.registerActionsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+div.registerActionsContainer > a > button {
+  width: 215px;
+  height: 44px;
+  background-color: #084298;
+  border-radius: 16px;
+  border: none;
+  color: #EFF0F6;
+  font-size: 16px;
+  font-weight: 600;
+} div.registerActionsContainer > a > button:hover {
+  cursor: pointer;
+  background-color: rgba(8, 66, 152, 0.8);
+  transition: background-color 500ms;
+} div.registerActionsContainer > a > button:focus {
+  outline: none;
+}
+
+div.registerActionsContainer > a {
+  width: 100%;
+  margin: 20px 0 0 0;
+  align-items: center;
+  text-align: center;
+  color: #14142B;
+  text-decoration: none;
+} div.registerActionsContainer > a:visited {
+  color: #14142B;
+}
+
+@media (max-width: 868px) {
+  .registerHeader {
+    text-align: center;
+    margin: auto;
+    font-size: 48px;
+    margin: 80px 15px 0 15px;
+
+  } 
+
+  @media (max-width: 674px) {
+    .registerHeader {
+      font-size: 32px;
+    }
+
+    .registerFormContainer {
+      width: auto;
+      margin: 0 20px 0 20px;
+    }
+  }
+
+  @media (max-width: 427px) {
+    .registerHeader {
+      font-size: 28px;
+    }
+  
+    .registerFormContainer {
+      width: 300px;
+    }
+  
+    .registerInputContainer {
+      width: auto;
+      margin: 0;
+      padding: 0 5px 0 5px;
+    }
+  }
+
+  @media (max-width: 380px){
+    .registerContainer{
+      width: 320px;
+      margin: 0;
+    }
+  
+    .registerHeader {
+      font-size: 22px;
+    }
+  
+    .registerBackgroundContainer {
+      width: 100%;
+    }
+  }
+
+}

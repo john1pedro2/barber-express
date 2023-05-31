@@ -1,0 +1,52 @@
+.scheduleModalContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #172740;
+  color: #14142B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scheduleModalBackground {
+  width: 478px;
+  height: 337px;
+  background-color: #ffffff;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: flex-start;
+  padding: 30px;
+  margin: 0 15px 0 15px;
+}
+
+.scheduleModalBackground > p:nth-child(1) {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 30px 0 ;
+}
+
+.scheduleModalBackground > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.scheduleModalBackground > a > button {
+  width: 215px;
+  height: 44px;
+  background-color: #084298;
+  border-radius: 16px;
+  border: none;
+  color: #EFF0F6;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media (max-width: 530px) {
+  .scheduleModalBackground {
+    height: fit-content;
+  }
+}
